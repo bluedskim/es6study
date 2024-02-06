@@ -1,0 +1,9 @@
+<script>
+function isNumber(value) {
+  return typeof value === "number";
+}
+const a1 = [1, 2, 3];
+console.log(a1.every(isNumber)); // true
+const a2 = [1, "2", 3];
+console.log(a2.every(isNumber)); // false
+</script>

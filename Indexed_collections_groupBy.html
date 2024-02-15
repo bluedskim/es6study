@@ -1,0 +1,14 @@
+<script>
+const inventory = [
+  { name: "asparagus", type: "vegetables" },
+  { name: "bananas", type: "fruit" },
+  { name: "goat", type: "meat" },
+  { name: "cherries", type: "fruit" },
+  { name: "fish", type: "meat" },
+];
+
+const result = Object.groupBy(inventory, ({ type }) => type);
+console.log(result);
+console.log(result.vegetables);
+// [{ name: "asparagus", type: "vegetables" }]
+</script>
